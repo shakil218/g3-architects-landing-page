@@ -83,10 +83,37 @@ header {
   margin: 2rem 0;
 }
 
+/* quick list featured */
+.quick-list-container{
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.team-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+
+.quick-list-content{
+  max-width: 530px;
+  margin-left: 4rem;
+}
+
+#quick-list{
+  font-size: 2.08rem;
+  font-weight: 500;
+}
+
+#features{
+  color: #ff900e;
+}
+
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
   .navbar-container,
-  .navbar-list-container {
+  .navbar-list-container,
+  .quick-list-container {
     flex-direction: column;
   }
 
@@ -103,16 +130,33 @@ header {
   .banner-image {
     width: 100%;
   }
+
+  .team-container{
+    grid-template-columns: 1fr;
+  }
+
+  .team-container img {
+    width: 100%;
+  }
 }
 
 /* responsive for tablet device */
 
 @media screen and (min-width:576px) and (max-width:992px) {
+  .quick-list-container{
+    flex-direction: column-reverse;
+  }
+
   .navbar-container{
     margin:0 10px ;
   }
 
   .banner-image{
     width: 100%;
+  }
+
+  .quick-list-content{
+    text-align: center;
+    margin-bottom: 2rem;
   }
 }
