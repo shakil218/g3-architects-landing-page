@@ -84,29 +84,66 @@ header {
 }
 
 /* quick list featured */
-.quick-list-container{
+.quick-list-container {
   align-items: center;
   margin: 3rem auto;
 }
 
-.team-container{
+.team-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-.quick-list-content{
+.quick-list-content {
   max-width: 530px;
   margin-left: 4rem;
 }
 
-#quick-list{
+#quick-list {
   font-size: 2.08rem;
   font-weight: 500;
 }
 
-#features{
+#features {
   color: #ff900e;
+}
+
+/* some facts */
+.facts-content {
+  max-width: 540px;
+}
+
+.facts-content h3 {
+  margin-bottom: 10px;
+}
+
+.facts-badge-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 3rem;
+}
+
+.facts-badge {
+  height: 270px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #ff900e;
+  border-radius: 8px;
+}
+
+.badge-number{
+  font-size: 2.08rem;
+  font-weight: 600;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.badge-text{
+  font-size: 1.02rem;
+  font-weight: 600;
 }
 
 /* responsive for mobile device */
@@ -117,7 +154,7 @@ header {
     flex-direction: column;
   }
 
-  .navbar-list-container{
+  .navbar-list-container {
     padding-left: 0px;
   }
 
@@ -131,32 +168,50 @@ header {
     width: 100%;
   }
 
-  .team-container{
+  .team-container {
     grid-template-columns: 1fr;
   }
 
   .team-container img {
     width: 100%;
   }
+
+  .facts-content {
+    text-align: center;
+  }
+
+  .facts-badge-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* responsive for tablet device */
 
-@media screen and (min-width:576px) and (max-width:992px) {
-  .quick-list-container{
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .quick-list-container {
     flex-direction: column-reverse;
   }
 
-  .navbar-container{
-    margin:0 10px ;
+  .navbar-container {
+    margin: 0 10px;
   }
 
-  .banner-image{
+  .banner-image {
     width: 100%;
   }
 
-  .quick-list-content{
+  .quick-list-content {
     text-align: center;
     margin-bottom: 2rem;
+  }
+
+  .facts-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .facts-badge {
+    height: auto;
+    padding: 1rem 0;
   }
 }
