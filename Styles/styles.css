@@ -1,5 +1,5 @@
 /* Global styles */
-header {
+.bg-color {
   background-color: rgb(255, 144, 14, 10%);
 }
 
@@ -152,6 +152,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .sponsors-content {
@@ -174,6 +175,13 @@ header {
   height: 50px;
   text-align: center;
   filter: grayscale(100%);
+}
+
+/* footer */
+
+.footer{
+  padding:1.5rem  ;
+  text-align: center;
 }
 
 /* responsive for mobile device */
